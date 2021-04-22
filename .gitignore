@@ -1,4 +1,5 @@
 node_modules
+package-lock.json
 *.log
 *.sqlite3
 server/public/bundle.js
@@ -7,3 +8,4 @@ server/public/styles.css
 server/public/styles.css.map
 .env
 tags
+
