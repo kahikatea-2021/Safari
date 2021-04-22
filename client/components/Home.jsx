@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
-import { fetchContinents } from '../actions'
+import { fetchContinents, fetchAnimals } from '../actions'
 
 function Home (props) {
   useEffect(() => {
     props.dispatch(fetchContinents())
+    props.dispatch(fetchAnimals())
   }, [])
 
   return (
@@ -17,6 +18,10 @@ function Home (props) {
           {props.continents.map(continent => (
             <li key={continent}><Link to={`/${continent}`}>{continent}</Link></li>
           ))}
+          {props.animals.map(animal => (
+            <li key={animal}><p>{animal.emoji}</p></li>
+          ))}
+
         </ul>
       </div>
     </>
@@ -25,7 +30,8 @@ function Home (props) {
 
 const mapStateToProps = (globalState) => {
   return {
-    continents: globalState.continents
+    continents: globalState.continents,
+    animals: globalState.animals
   }
 }
 
