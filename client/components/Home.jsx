@@ -12,6 +12,7 @@ function Home (props) {
     <>
       <div>
         <h1>Virtual Safari</h1>
+        <img src={('images/Safari.png')}></img>
         <ul>
           {props.continents.map(continent => (
             <li key={continent}><Link to={`/${continent}`}>{continent}</Link></li>
