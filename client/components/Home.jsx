@@ -1,24 +1,23 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
-
 import { fetchContinents } from '../actions'
 
-function Home(props) {
+function Home (props) {
   useEffect(() => {
     props.dispatch(fetchContinents())
   }, [])
 
   return (
     <>
-    <div>
-      <h1>Virtual Safari</h1>
-      <ul>
-        {props.continents.map(continent => (
-          <li key={continent}><Link to={`/${continent}`}>{continent}</Link></li>
-        ))}
-      </ul>
-    </div>
+      <div>
+        <h1>Virtual Safari</h1>
+        <ul>
+          {props.continents.map(continent => (
+            <li key={continent}><Link to={`/${continent}`}>{continent}</Link></li>
+          ))}
+        </ul>
+      </div>
     </>
   )
 }
