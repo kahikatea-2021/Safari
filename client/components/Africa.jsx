@@ -1,13 +1,23 @@
 import React from 'react'
-// import { connect } from 'react-redux'
+import { connect } from 'react-redux'
+
+import { fetchContinents } from '../actions'
 
 function Africa (props) {
   return (
     <>
       <div>
+        test
       </div>
     </>
   )
 }
 
-export default Africa
+
+const mapStateToProps = (globalState) => {
+  return {
+    continents: globalState.continents
+  }
+}
+
+export default connect(mapStateToProps)(Africa)

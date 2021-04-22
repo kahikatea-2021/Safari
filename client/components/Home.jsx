@@ -1,13 +1,32 @@
-import React from 'react'
-// import { connect } from 'react-redux'
+import React, { useEffect } from 'react'
+import { Link } from 'react-router-dom'
+import { connect } from 'react-redux'
 
-function Home (props) {
+import { fetchContinents } from '../actions'
+
+function Home(props) {
+  useEffect(() => {
+    props.dispatch(fetchContinents())
+  }, [])
+
   return (
     <>
-      <div>
-      </div>
+    <div>
+      <h1>Virtual Safari</h1>
+      <ul>
+        {props.continents.map(continent => (
+          <li key={continent}><Link to={`/${continent}`}>{continent}</Link></li>
+        ))}
+      </ul>
+    </div>
     </>
   )
 }
 
-export default Home
+const mapStateToProps = (globalState) => {
+  return {
+    continents: globalState.continents
+  }
+}
+
+export default connect(mapStateToProps)(Home)
