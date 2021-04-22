@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { fetchContinents, fetchAnimals } from '../actions'
 
-function Home (props) {
+function Home(props) {
   useEffect(() => {
     props.dispatch(fetchContinents())
     props.dispatch(fetchAnimals())
@@ -11,18 +11,21 @@ function Home (props) {
 
   return (
     <>
-      <div>
+      <div className="background">
         <h1>Virtual Safari</h1>
-        <img src={('images/Safari.png')}></img>
-        <ul>
-          {props.continents.map(continent => (
-            <li key={continent}><Link to={`/${continent}`}>{continent}</Link></li>
+        <div className="grid-container">Safari</div>
+        <div ><img className="car" src="./safari.png" /></div>
+        <div className="grid-item">
+          <ul>{props.continents.map(continent => (
+            <button class="grid-item" key={continent}><Link to={`/${continent}`}>{continent}</Link></button>
           ))}
-          {props.animals.map(animal => (
-            <li key={animal}><p>{animal.emoji}</p></li>
-          ))}
+            {props.animals.map(animal => (
+              <li key={animal}><p>{animal.emoji}</p></li>
+            ))}
 
-        </ul>
+          </ul>
+
+        </div>
       </div>
     </>
   )
