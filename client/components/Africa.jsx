@@ -7,12 +7,11 @@ function Africa (props) {
   return (
     <>
       <div>
-        test
+        <p>test</p>
       </div>
     </>
   )
 }
-
 
 const mapStateToProps = (globalState) => {
   return {

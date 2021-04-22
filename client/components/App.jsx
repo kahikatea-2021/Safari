@@ -4,7 +4,7 @@ import { Route } from 'react-router-dom'
 import Home from './Home'
 import Africa from './Africa'
 
-function App(props) {
+function App (props) {
   return (
     <>
       <Route exact path ='/' component = {Home}/>
@@ -12,4 +12,4 @@ function App(props) {
     </>
   )
 }
-export default App;
+export default App
