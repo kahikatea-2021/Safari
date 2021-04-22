@@ -1,14 +1,15 @@
 import React from 'react'
-// import { connect } from 'react-redux'
+import { Route } from 'react-router-dom'
 
-function App (props) {
+import Home from './Home'
+import Africa from './Africa'
+
+function App(props) {
   return (
     <>
-      <div className='app'>
-        <h1>Virtual Safari</h1>
-      </div>
+      <Route exact path ='/' component = {Home}/>
+      <Route path='/Africa' component = {Africa} />
     </>
   )
 }
-
-export default App
+export default App;
