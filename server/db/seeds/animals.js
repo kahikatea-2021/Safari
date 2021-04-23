@@ -5,7 +5,7 @@ exports.seed = function (knex) {
       // Inserts seed entries
       return knex('animals').insert([
         { id: 1, animal: 'Lion', emoji: '🦁', description: 'Hear me roar!', continent: 'Africa', image: 'lion.jpg', cuteness_rating: 5, danger_rating: 5, can_jump_over_car: true },
-        { id: 2, animal: 'Elephant', emoji: '🐘', description: 'Elephants can use their trunks to pick things up!', continent: 'Africa', image: 'elephantafrica.jpg', cuteness_rating: 5, danger_rating: 4, can_jump_over_car: true },
+        { id: 2, animal: 'African Elephant', emoji: '🐘', description: 'Elephants can use their trunks to pick things up!', continent: 'Africa', image: 'elephantafrica.jpg', cuteness_rating: 5, danger_rating: 4, can_jump_over_car: true },
         { id: 3, animal: 'Giraffe', emoji: '🦒', description: 'The giraffe is the tallest land animal in the world!', continent: 'Africa', image: 'giraffe.jpg', cuteness_rating: 5, danger_rating: 2, can_jump_over_car: false },
         { id: 4, animal: 'Hippo', emoji: '🦛', description: 'They may look cute, but they can be very vicious!', continent: 'Africa', image: 'hippo.jpg', cuteness_rating: 5, danger_rating: 4, can_jump_over_car: false },
         { id: 5, animal: 'Zebra', emoji: '🦓', description: 'Zebras\' dazzling stripes make them one of the most recognisable animals in the world!', continent: 'Africa', image: 'zebra.jpg', cuteness_rating: 5, danger_rating: 2, can_jump_over_car: false },
@@ -35,7 +35,7 @@ exports.seed = function (knex) {
         { id: 29, animal: 'Panda', emoji: '🐼', description: 'Panda bears are cute and cuddly', continent: 'Asia', image: 'panda.jpg', cuteness_rating: 5, danger_rating: 3, can_jump_over_car: false },
         { id: 30, animal: 'Black Bear', emoji: '🐻', description: 'They have cute little round ears', continent: 'Asia', image: 'bear.jpg', cuteness_rating: 4, danger_rating: 5, can_jump_over_car: true },
         { id: 31, animal: 'Leopard', emoji: '🐆', description: 'Leopards can run up to 58km per hour!', continent: 'Asia', image: 'leopard.jpg', cuteness_rating: 5, danger_rating: 4, can_jump_over_car: true },
-        { id: 32, animal: 'Elephant', emoji: '🐘', description: 'These gentle giants are super sweet', continent: 'Asia', image: 'elephantasia.jpg', cuteness_rating: 5, danger_rating: 4, can_jump_over_car: false },
+        { id: 32, animal: 'Asian Elephant', emoji: '🐘', description: 'These gentle giants are super sweet', continent: 'Asia', image: 'elephantasia.jpg', cuteness_rating: 5, danger_rating: 4, can_jump_over_car: false },
         { id: 33, animal: 'Red Panda', emoji: '🐾', description: 'These little pandas are absolutely adorable!', continent: 'Asia', image: 'redpanda.jpg', cuteness_rating: 5, danger_rating: 2, can_jump_over_car: false },
         { id: 34, animal: 'Penguin', emoji: '🐧', description: 'NOOT NOOT!', continent: 'Antarctica', image: 'penguin.jpg', cuteness_rating: 5, danger_rating: 1, can_jump_over_car: true },
         { id: 35, animal: 'Polar Bear', emoji: '🐻‍❄️', description: 'Polar bears like to go fishing!', continent: 'Antarctica', image: 'polarbear.jpg', cuteness_rating: 5, danger_rating: 5, can_jump_over_car: true },
