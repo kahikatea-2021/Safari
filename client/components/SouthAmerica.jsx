@@ -11,13 +11,13 @@ function SouthAmerica (props) {
 
   return (
     <>
-      <div>
+    <div className ='SouthAmerica'>
 
         <Animal animalName = 'Sloth'/>
         <Animal animalName = 'Llama'/>
         <Animal animalName = 'Parrot'/>
         <Animal animalName = 'Frog'/>
-        
+
       </div>
     </>
   )

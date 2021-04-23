@@ -11,7 +11,7 @@ function NorthAmerica (props) {
 
   return (
     <>
-      <div>
+    <div className ='NorthAmerica'>
 
         <Animal animalName = 'Otter'/>
         <Animal animalName = 'Alligator'/>

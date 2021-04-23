@@ -1,4 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Chicle&display=swap);
+* {
+  box-sizing: border-box;
+}
 html,
 body {
   font-family: "Chicle", sans-serif;
@@ -11,6 +14,35 @@ h1 {
 
 .background {
   background-image: url(savanah.jpg)
+}
+    }
+.background {
+  background-image: url(savanah.jpg)
+}
+a {
+  text-decoration: none
+}
+.Africa {
+  background-image: url(images/Africa.png);
+  background-repeat: no-repeat;
+}
+.Antarctica {
+  background-image: url(images/Antarctica.png)
+}
+.Asia {
+  background-image: url(images/Asia.png)
+}
+.Europe {
+  background-image: url(images/Europe.png)
+}
+.NorthAmerica {
+  background-image: url(images/NorthAmerica.png)
+}
+.SouthAmerica {
+  background-image: url(images/SouthAmerica.png)
+}
+.Oceania {
+  background-image: url(images/Oceania.png)
 }
 p {
   text-align: center;
@@ -42,6 +74,31 @@ p {
 }
 .buttonMain {
   background-color: skyblue;
+  margin-top: 6%;
+}
+.continent {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto  auto auto auto auto auto auto auto auto auto auto auto auto  auto auto auto auto auto auto ;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-container {
+  display: inline-grid;
+  grid-template-columns: auto auto auto ;
+  background-color: #2196F3;
+  padding: 10px;
+  border: 0px;
+}
+.grid-item {
+    border: 0px solid #2196F3;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+}
+.car {
+  height: 500px;
+}
+.buttonMain {
   display:inline-block;
   padding:0.3em 1.2em;
   margin:0 0.1em 0.1em 0;
@@ -50,6 +107,7 @@ p {
   box-sizing: border-box;
   text-decoration:none;
   font-family:'Chicle',sans-serif;
+  font-family:'Roboto',sans-serif;
   font-weight:300;
   color:#81cf1a93;
   text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
@@ -68,3 +126,4 @@ p {
 .buttonMain a {
   color: salmon;
 }
+  }

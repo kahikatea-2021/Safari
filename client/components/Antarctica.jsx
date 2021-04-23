@@ -11,7 +11,7 @@ function Antarctica(props) {
 
   return (
     <>
-      <div>
+      <div className ='Antarctica'>
         <Animal animalName='Penguin' />
         <Animal animalName='Polar Bear' />
         <Animal animalName='Seal' />
