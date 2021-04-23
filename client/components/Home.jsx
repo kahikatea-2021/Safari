@@ -1,14 +1,12 @@
+
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
-import { fetchContinents, fetchAnimals } from '../actions'
-
-function Home(props) {
+import { fetchContinents } from '../actions'
+function Home (props) {
   useEffect(() => {
     props.dispatch(fetchContinents())
-    props.dispatch(fetchAnimals())
   }, [])
-
   return (
     <>
       <div className="background">
@@ -17,25 +15,19 @@ function Home(props) {
         <div className="grid-item">  {props.continents.map(continent => (
             <button className="buttonMain" key={continent}><Link to={`/${continent}`}>{continent}</Link></button>
           ))}
-            {props.animals.map(animal => (
-              <li key={animal}><p>{animal.emoji}</p></li>
-            ))}
-
-          </ul>
-
         </div>
-        <div ><img className="car"src="./safari2.png"/></div>
-        
+        <p>Unvortunetely during COVID times our travel optons are very limited.
+          We found solution to it! Please travel with us on our Virtual Safari.
+          You will get to see lots of interesting places and animals.
+          Enjoy your journey! </p>
+        <div><img className="car"src="./safari2.png"/></div>
       </div>
     </>
   )
 }
-
 const mapStateToProps = (globalState) => {
   return {
-    continents: globalState.continents,
-    animals: globalState.animals
+    continents: globalState.continents
   }
 }
-
 export default connect(mapStateToProps)(Home)
