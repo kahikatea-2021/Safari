@@ -8,8 +8,8 @@ exports.seed = function (knex) {
         { id: 2, name: 'Antarctica' },
         { id: 3, name: 'Asia' },
         { id: 4, name: 'Europe' },
-        { id: 5, name: 'North America' },
-        { id: 6, name: 'South America' },
+        { id: 5, name: 'NorthAmerica' },
+        { id: 6, name: 'SouthAmerica' },
         { id: 7, name: 'Oceania' },
       ])
     })

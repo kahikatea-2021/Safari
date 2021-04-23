@@ -1,7 +1,7 @@
 import React from 'react'
 // import { connect } from 'react-redux'
 
-function Animals (props) {
+function HeroImage (props) {
   return (
     <>
       <div>
@@ -10,4 +10,4 @@ function Animals (props) {
   )
 }
 
-export default Animals
+export default HeroImage

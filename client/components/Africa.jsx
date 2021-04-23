@@ -1,13 +1,28 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { connect } from 'react-redux'
+import { fetchAnimals } from '../actions'
+import Animal from './Animal'
 
-import { fetchContinents } from '../actions'
+function Africa(props) {
+  useEffect(() => {
+    props.dispatch(fetchAnimals())
+  }, [])
 
-function Africa (props) {
+
   return (
     <>
-      <div>
-        <p>test</p>
+      <div id="Africa">
+
+        <Animal animalName = 'Lion'/>
+        <Animal animalName = 'African Elephant'/>
+        <Animal animalName = 'Giraffe'/>
+        <Animal animalName = 'Zebra'/>
+        <Animal animalName = 'Orangutan'/>
+        <Animal animalName = 'Tiger'/>
+
+        {/* {props.animals.filter(animal => animal.continent === 'Africa').map(animal => (<li key={animal}><p>{animal.emoji}</p></li>
+        ))} */}
+
       </div>
     </>
   )
@@ -15,7 +30,7 @@ function Africa (props) {
 
 const mapStateToProps = (globalState) => {
   return {
-    continents: globalState.continents
+    animals: globalState.animals
   }
 }
 

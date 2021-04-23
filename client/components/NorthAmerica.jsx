@@ -1,13 +1,35 @@
-import React from 'react'
-// import { connect } from 'react-redux'
+import React, {useEffect} from 'react'
+import { connect } from 'react-redux'
+import { fetchAnimals } from '../actions'
+import Animal from './Animal'
 
 function NorthAmerica (props) {
+  useEffect(() => {
+    props.dispatch(fetchAnimals())
+  }, [])
+
+
   return (
     <>
       <div>
+
+        <Animal animalName = 'Otter'/>
+        <Animal animalName = 'Alligator'/>
+        <Animal animalName = 'Squirrel'/>
+        <Animal animalName = 'Raccoon'/>
+        <Animal animalName = 'Buffalo'/>
+        <Animal animalName = 'Eagle'/>
+        <Animal animalName = 'Beaver'/>
+
       </div>
     </>
   )
 }
 
-export default NorthAmerica
+const mapStateToProps = (globalState) => {
+  return {
+    animals: globalState.animals
+  }
+}
+
+export default connect(mapStateToProps)(NorthAmerica)

@@ -1,11 +1,7 @@
-@import url(https://fonts.googleapis.com/css2?family=Chicle&display=swap);
-
-* {
-  box-sizing: border-box;
-}
-
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap);
 html,
 body {
+<<<<<<< HEAD
   font-family: "Chicle", sans-serif;
   }
 h1 {
@@ -64,3 +60,9 @@ p {
     display:block;
     margin:0.2em auto;
   }
+=======
+  font-family: "Montserrat", sans-serif;
+}
+
+/*# sourceMappingURL=styles.css.map*/
+>>>>>>> 884b86ad70261186b01d496cd8d3dc75b64e1f39
