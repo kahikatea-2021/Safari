@@ -11,7 +11,7 @@ function Africa(props) {
 
   return (
     <>
-      <div id="Africa">
+      <div className="Africa">
 
         <Animal animalName = 'Lion'/>
         <Animal animalName = 'African Elephant'/>

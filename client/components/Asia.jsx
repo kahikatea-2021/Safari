@@ -10,7 +10,7 @@ function Asia (props) {
 
   return (
     <>
-      <div>      
+    <div className ='Asia'>
        <Animal animalName='Panda' />
         <Animal animalName='Leopard' />
         <Animal animalName='Asian Elephant' />

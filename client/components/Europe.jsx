@@ -11,7 +11,7 @@ function Europe (props) {
 
   return (
     <>
-      <div>
+    <div className ='Europe'>
 
 
 
