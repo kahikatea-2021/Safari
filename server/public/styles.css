@@ -16,7 +16,8 @@ a {
   text-decoration: none
 }
 .Africa {
-  background-image: url(images/Africa.png)
+  background-image: url(images/Africa.png);
+  background-repeat: no-repeat;
 }
 .Antarctica {
   background-image: url(images/Antarctica.png)
@@ -42,14 +43,21 @@ p {
   margin-right: 28%;
   margin-top: 6%;
 }
+.continent {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto  auto auto auto auto auto auto auto auto auto auto auto auto  auto auto auto auto auto auto ;
+  background-color: #2196F3;
+  padding: 10px;
+}
 .grid-container {
   display: inline-grid;
   grid-template-columns: auto auto auto ;
   background-color: #2196F3;
   padding: 10px;
+  border: 0px;
 }
 .grid-item {
-    border: 5px solid #2196F3;
+    border: 0px solid #2196F3;
   font-size: 30px;
   text-align: center;
   padding: 10px;
