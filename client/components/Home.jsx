@@ -14,13 +14,10 @@ function Home(props) {
       <div className="background">
         <h1>Virtual Safari</h1>
         <div className="grid-container">Safari</div>
-        <div className="grid-item">  {props.continents.map(continent => (
+        <div className="grid-item">  
+        <ul>{props.continents.map(continent => (
             <button className="buttonMain" key={continent}><Link to={`/${continent}`}>{continent}</Link></button>
           ))}
-            {props.animals.map(animal => (
-              <li key={animal}><p>{animal.emoji}</p></li>
-            ))}
-
           </ul>
 
         </div>
