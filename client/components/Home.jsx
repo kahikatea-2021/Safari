@@ -22,7 +22,7 @@ function Home (props) {
           We found solution to it! Please travel with us on our Virtual Safari.
           You will get to see lots of interesting places and animals.
           Enjoy your journey! </p>
-        <div ><img className="car"src="./safari2.png"/></div>
+        <div><img className="car"src="./safari2.png"/></div>
         
       </div>
     </>

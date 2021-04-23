@@ -18,8 +18,9 @@ h1 {
 }
 p {
   text-align: center;
-  margin-left: 18%;
-  margin-right: 8%;
+  margin-left: 28%;
+  margin-right: 28%;
+  margin-top: 6%;
 }
 
 .grid-container {
@@ -29,7 +30,7 @@ p {
   padding: 10px;
 }
 .grid-item {
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    border: 5px solid #2196F3;
   font-size: 30px;
   text-align: center;
   
