@@ -14,7 +14,7 @@ function Animal(props) {
   
     return (
       <>
-          {props.animals.filter(animal => animal.animal === props.animalName).map(animal => (<Link to={`/${animal.animal}`}><p>{animal.emoji}</p></Link>
+          {props.animals.filter(animal => animal.animal === props.animalName).map(animal => (<Link to={`/AnimalInfo/${animal.animal}`}><p>{animal.emoji}</p></Link>
           ))}
       </>
     )

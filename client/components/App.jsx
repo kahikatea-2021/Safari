@@ -9,6 +9,7 @@ import Europe from './Europe'
 import NorthAmerica from './NorthAmerica'
 import SouthAmerica from './SouthAmerica'
 import Oceania from './Oceania'
+import AnimalInfo from './AnimalInfo'
 
 function App (props) {
   return (
@@ -21,6 +22,7 @@ function App (props) {
       <Route path='/NorthAmerica' component = {NorthAmerica} />
       <Route path='/SouthAmerica' component = {SouthAmerica} />
       <Route path='/Oceania' component = {Oceania} />
+      <Route path='/AnimalInfo/:name' component = {AnimalInfo} />
     </>
   )
 }
