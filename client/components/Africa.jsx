@@ -1013,3 +1013,7 @@ const mapStateToProps = (globalState) => {
 }
 
 export default connect(mapStateToProps)(Africa)
+
+<div>
+      
+    </div>
