@@ -43,7 +43,9 @@ p {
   margin-right: 28%;
   margin-top: 6%;
 }
+
 .continent {
+  color: #61B3E6;
   display: inline-grid;
   grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto  auto auto auto auto auto auto auto auto auto auto auto auto  auto auto auto auto auto auto ;
   background-color: #2196F3;
